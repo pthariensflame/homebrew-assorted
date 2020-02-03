@@ -12,7 +12,7 @@ brew install pthariensflame/assorted/<casks>
 ```
 
 Or `brew tap pthariensflame/assorted` and then `brew install
-<formula>`.
+<formula>` or `brew cask install <cask>`.
 
 Or install via URL (which will not receive updates):
 
