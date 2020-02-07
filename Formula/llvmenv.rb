@@ -7,7 +7,7 @@ class Llvmenv < Formula
 
   devel do
     url "https://github.com/termoshtt/llvmenv/archive/0.2.2-alpha.1.tar.gz"
-    sha256 "4f51b00a08f8ccf497bc247fc0315e23f22bc313efd5bf69d2d3407750804864"
+    sha256 "039b6ad042a57cc73f4aa652008ac687a94f5e9449ad35bf8d01080df627c88b"
   end
 
   depends_on "rust" => :build
