@@ -4,9 +4,9 @@ cask 'zulu-mission-control' do
 
   depends_on
   
-  url "https://cdn.azul.com/zmc/bin/zmc7.1.0.65-ca-macos_x64.tar.gz"
+  url "https://cdn.azul.com/zmc/bin/zmc#{version}-ca-macos_x64.tar.gz"
   name 'Zulu Mission Control'
   homepage 'https://www.azul.com/products/zulu-mission-control/'
 
-  app 'Zulu Mission Control.app'
+  app 'zmc#{version}-ca-macos_x64/Zulu Mission Control.app'
 end
