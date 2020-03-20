@@ -1,6 +1,6 @@
 cask 'zulu-mission-control' do
-  version '7.1.0.65'
-  sha256 '40b8208fd8b97e66f0f0c0fd93d5e8f608c4461d1d26729509e393cc7a7cbd8c'
+  version '7.1.0.69'
+  sha256 '3bb672917f6b80f451099cf7d5d97f4daafc4e79850ff29d1193a7413e922307'
 
   depends_on
   
