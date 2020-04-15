@@ -1,6 +1,6 @@
 cask 'sapmachine-jdk-lts' do
-  version '11.0.6'
-  sha256 '53f5770b08e146cd3cf582e1485feb370cd4c393856f3e7c7234ce07af00b041'
+  version '11.0.7'
+  sha256 '2a69888af8eb313fd91145eeea595cd6a3f9409d0a9ed9856ad74aa85268b9d0'
 
   # github.com/SAP/SapMachine was verified as official when first introduced to the cask
   url "https://github.com/SAP/SapMachine/releases/download/sapmachine-#{version}/sapmachine-jdk-#{version}_osx-x64_bin.dmg"
