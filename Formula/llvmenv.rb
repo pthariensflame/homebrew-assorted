@@ -1,14 +1,10 @@
 class Llvmenv < Formula
   desc "Manages multiple LLVM/Clang builds"
   homepage "https://github.com/termoshtt/llvmenv"
-  url "https://github.com/termoshtt/llvmenv/archive/0.2.1.tar.gz"
-  sha256 "4f51b00a08f8ccf497bc247fc0315e23f22bc313efd5bf69d2d3407750804864"
+  url "https://github.com/termoshtt/llvmenv/archive/0.3.0.tar.gz"
+  sha256 "decf49ef354fa6567a439a0ac6e043777910aa0dda59f49c9f0aaa6f4fb9c7d5"
   head "https://github.com/termoshtt/llvmenv.git"
 
-  devel do
-    url "https://github.com/termoshtt/llvmenv/archive/0.2.2-alpha.1.tar.gz"
-    sha256 "039b6ad042a57cc73f4aa652008ac687a94f5e9449ad35bf8d01080df627c88b"
-  end
 
   depends_on "rust" => :build
   depends_on "cmake"
