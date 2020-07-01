@@ -1,8 +1,8 @@
 class IonShell < Formula
   desc "Modern system shell from RedoxOS"
   homepage "https://gitlab.redox-os.org/redox-os/ion"
-  head "https://gitlab.redox-os.org/redox-os/ion.git"
   revision 1
+  head "https://gitlab.redox-os.org/redox-os/ion.git"
 
   depends_on "coreutils" => :build
   depends_on "mdbook" => :build
