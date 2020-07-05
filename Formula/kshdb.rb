@@ -5,8 +5,8 @@ class Kshdb < Formula
   sha256 "bfc4026e80c9f55719af6d5d51349be422292da828a8190ef86260ca8ac390c3"
   license "GPL-2.0-only"
 
-  depends_on "automake" => :build
   depends_on "autoconf" => :build
+  depends_on "automake" => :build
   depends_on "ksh"
 
   def install
