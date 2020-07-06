@@ -28,6 +28,6 @@ class Teyjus < Formula
   end
 
   test do
-    system "tjcc", "--version"
+    system bin/"tjcc", "--version"
   end
 end
