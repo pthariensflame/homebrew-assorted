@@ -1,12 +1,14 @@
-cask 'zulu-mission-control' do
-  version '7.1.1.77'
-  sha256 '5cf03c6fe9aae76a48ab8d4ac2489a44510154558d1ba743aeb130f4b471123f'
+cask "zulu-mission-control" do
+  version "7.1.1.79"
+  sha256 "74edc09c788e8c28bb4cfd4d8f72696e27b4e019c84b2a44816c13541e4acf80"
 
   url "https://cdn.azul.com/zmc/bin/zmc#{version}-ca-macos_x64.tar.gz"
-  name 'Zulu Mission Control'
-  homepage 'https://www.azul.com/products/zulu-mission-control/'
+  name "Zulu Mission Control"
+  desc "Azul version of JDK Mission Control; monitor running JVMs"
+  homepage "https://www.azul.com/products/zulu-mission-control/"
 
-  depends_on java: '1.8+'
+  depends_on java: "1.8+"
+  depends_on macos: ">= :high_sierra"
 
   app "zmc#{version}-ca-macos_x64/Zulu Mission Control.app"
 end
