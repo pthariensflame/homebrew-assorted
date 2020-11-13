@@ -1,8 +1,8 @@
 class MdbookLinkcheck < Formula
   desc "Link-checker plugin for mdbook"
   homepage "https://github.com/Michael-F-Bryan/mdbook-linkcheck"
-  url "https://github.com/Michael-F-Bryan/mdbook-linkcheck/archive/v0.7.0.tar.gz"
-  sha256 "e3e444690d4e2c744eb240d4f6bacc6ebfacfadd9f75c61e0c461d7f046b920e"
+  url "https://github.com/Michael-F-Bryan/mdbook-linkcheck/archive/v0.7.1.tar.gz"
+  sha256 "349a168f7838d590163f9e03f522ae1a68f5a1eb7d6a78c24a9e8c437a05e50f"
   head "https://github.com/Michael-F-Bryan/mdbook-linkcheck.git"
 
   depends_on "rust" => :build
