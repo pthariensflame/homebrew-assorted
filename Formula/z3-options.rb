@@ -47,7 +47,7 @@ class Z3Options < Formula
       (build.with? "openjdk@11"),
       (build.with? "openjdk@8"),
     ]
-    ofail "cannot use more than one Java binding" if java_versions.count(true) > 1
+    odie "cannot use more than one Java binding" if java_versions.count(true) > 1
     args << "--java" if java_versions.any?
 
     args << "--ml" if build.with? "ocaml"
