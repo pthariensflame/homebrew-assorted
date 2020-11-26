@@ -10,6 +10,7 @@ class Z3Options < Formula
 
   deprecated_option "with-java" => "with-openjdk@8"
 
+  depends_on "dotnet" => :optional
   depends_on "mono" => :optional
   depends_on "ocaml" => :optional
   depends_on "openjdk" => :optional
@@ -36,7 +37,15 @@ class Z3Options < Formula
     else
       pycmd = "python"
     end
-    if build.with? "mono"
+
+    dotnet_versions = [
+      (build.with? "dotnet"),
+      (build.with? "mono"),
+    ]
+    odie "cannot use more than one .NET binding" if dotnet_versions.count(true) > 1
+    if build.with? "dotnet"
+      args << "--dotnet"
+    elsif build.with? "mono"
       ENV["CSC"] = Formula["mono"].bin/"csc"
       ENV["GACUTIL"] = Formula["mono"].bin/"gacutil"
       args << "--dotnet"
