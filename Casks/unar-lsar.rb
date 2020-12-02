@@ -7,6 +7,6 @@ cask "unar-lsar" do
   desc "Command-line unarchiving and archive browsing tools, handling many formats"
   homepage "https://theunarchiver.com/command-line"
 
-  binary "unarMac/unar"
-  binary "unarMac/lsar"
+  binary "unar"
+  binary "lsar"
 end
