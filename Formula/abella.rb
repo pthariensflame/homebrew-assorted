@@ -1,7 +1,7 @@
 class Abella < Formula
   desc "Interactive theorem prover based on lambda-tree syntax"
   homepage "https://abella-prover.org/"
-  revision 1
+  revision 2
   head "https://github.com/abella-prover/abella.git"
 
   stable do
@@ -11,7 +11,7 @@ class Abella < Formula
     # Necessary in order to compile with Homebrew's packaged ocaml version.
     # See: abella-prover/abella#123
     patch do
-      url "https://github.com/abella-prover/abella/commit/101faf5553ba1267c0e4c1dda979372b0c38a676.diff?full_index=1"
+      url "https://github.com/abella-prover/abella/commit/101faf5553ba1267c0e4c1dda979372b0c38a676.patch?full_index=1"
       sha256 "2f00562b177f1b131dec794fea769153ce767c6e8fd249c159c2a12a9012061a"
     end
   end
