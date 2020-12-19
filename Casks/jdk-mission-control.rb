@@ -4,7 +4,7 @@ cask "jdk-mission-control" do
 
   ver_num, ver_build = version.split "b"
 
-  url "https://download.java.net/java/GA/jmc7/#{ver_build}/binaries/jmc-#{ver_num}_osx-x64.tar.gz"
+  url "https://download.java.net/java/GA/jmc#{version.major}/#{ver_build}/binaries/jmc-#{ver_num}_osx-x64.tar.gz"
   name "JDK Mission Control"
   desc "Monitor running JVMs"
   homepage "https://openjdk.java.net/projects/jmc/"
