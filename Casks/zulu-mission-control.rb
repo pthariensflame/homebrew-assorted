@@ -7,7 +7,5 @@ cask "zulu-mission-control" do
   desc "Azul version of JDK Mission Control; monitor running JVMs"
   homepage "https://www.azul.com/products/zulu-mission-control/"
 
-  depends_on "zulu"
-
   app "zmc#{version}-ca-macos_x64/Zulu Mission Control.app"
 end
