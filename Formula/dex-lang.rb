@@ -20,7 +20,7 @@ class DexLang < Formula
     inreplace "src/resources/Resources.hs", "embedFile \"", "embedFile \"#{buildpath}/"
     system "cabal", "update"
     ENV["PREFIX"] = prefix
-    ENV["CXXFLAGS"] = "-std=gnu++17"
+    ENV["CXXFLAGS"] = "-std=gnu++17" # ???
     system "make", "install"
     system "make", "doc"
     cp_r "doc", doc
