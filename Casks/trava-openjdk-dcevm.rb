@@ -1,9 +1,8 @@
 cask "trava-openjdk-dcevm" do
-  version "11.0.9+2"
-  sha256 "064c3e1f94794fde86a457e822fe42ef779d417dd523dd39534cff032d4d1bde"
+  version "11.0.11+1"
+  sha256 "efec9c39405fd09a56fc0b0f855b522ea00f35e39639307a4848a3a23f985a66"
 
-  url "https://github.com/TravaOpenJDK/trava-jdk-#{version.major}-dcevm/releases/download/dcevm-#{version}/java#{version.major}-openjdk-dcevm-osx.tar.gz"
-  appcast "https://github.com/TravaOpenJDK/trava-jdk-#{version.major}-dcevm/releases.atom"
+  url "https://github.com/TravaOpenJDK/trava-jdk-#{version.major}-dcevm/releases/download/dcevm-#{version}/Openjdk#{version.major}u-dcevm-mac-x64.tar.gz"
   name "TravaOpenJDK DCEVM"
   desc "Version of Java with unlimited runtime class and resource redefinition"
   homepage "https://github.com/TravaOpenJDK/trava-jdk-#{version.major}-dcevm"
