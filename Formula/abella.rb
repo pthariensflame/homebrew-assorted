@@ -1,12 +1,11 @@
 class Abella < Formula
   desc "Interactive theorem prover based on lambda-tree syntax"
   homepage "https://abella-prover.org/"
-  revision 2
   head "https://github.com/abella-prover/abella.git"
 
   stable do
-    url "https://github.com/abella-prover/abella/archive/v2.0.6.tar.gz"
-    sha256 "d1f793b1e34f3adcaf6d28e2c0274bccb281afe89c8e3093c1e64df6ec4b9898"
+    url "https://github.com/abella-prover/abella/archive/v2.0.7.tar.gz"
+    sha256 "fde3a279b3051e0aeeaedad21cf96064edf19a6c413949b2033b305d92dddd87"
 
     # Necessary in order to compile with Homebrew's packaged ocaml version.
     # See: abella-prover/abella#123
