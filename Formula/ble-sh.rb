@@ -1,7 +1,7 @@
 class BleSh < Formula
   desc "Bash Line Editor: syntax highlighting, auto suggestions, vim modes, etc."
   homepage "https://github.com/akinomyoga/ble.sh"
-  url "https://github.com/akinomyoga/ble.sh/archive/v0.4.0-devel2.tar.gz"
+  url "https://github.com/akinomyoga/ble.sh.git", tag: "v0.4.0-devel2"
   version "0.4.0-devel2"
   sha256 "c5d2f2644f1bf9d9a92238b57b325ff950f0ed82fe2c21e019a51f50924c42bb"
   head "https://github.com/akinomyoga/ble.sh.git"
@@ -12,7 +12,6 @@ class BleSh < Formula
   uses_from_macos "bash"
 
   def install
-    inreplace "Makefile", "git submodule update --init --recursive", ""
     system Formula["make"].bin/"gmake"
     system Formula["make"].bin/"gmake", "INSDIR=#{libexec/"ble"}", "install"
   end
