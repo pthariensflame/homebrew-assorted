@@ -12,6 +12,7 @@ class BleSh < Formula
   uses_from_macos "bash"
 
   def install
+    inreplace "Makefile", "git submodule update --init --recursive", ""
     system Formula["make"].bin/"gmake"
     system Formula["make"].bin/"gmake", "INSDIR=#{libexec/"ble"}", "install"
   end
