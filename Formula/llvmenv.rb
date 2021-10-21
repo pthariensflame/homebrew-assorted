@@ -1,8 +1,8 @@
 class Llvmenv < Formula
   desc "Manages multiple LLVM/Clang builds"
   homepage "https://github.com/llvmenv/llvmenv"
-  url "https://github.com/llvmenv/llvmenv/archive/v0.3.1.tar.gz"
-  sha256 "56ea5278db339f0f8d8cdf07fb3cf86b33a2b7343df54967d12b886bed8390d0"
+  url "https://github.com/llvmenv/llvmenv/archive/v0.3.2.tar.gz"
+  sha256 "b0fc96e1c07113f691d618021b4ec1aba7ebafa4f8c9221e45e8ae1dc7688c79"
   head "https://github.com/llvmenv/llvmenv.git"
 
   depends_on "rust" => :build
