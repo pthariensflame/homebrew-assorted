@@ -5,7 +5,6 @@ class Z3Options < Formula
   sha256 "e3aaefde68b839299cbc988178529535e66048398f7d083b40c69fe0da55f8b7"
   license "MIT"
   head "https://github.com/Z3Prover/z3.git", branch: "master"
-  bottle :unneeded
 
   deprecated_option "with-java" => "with-openjdk@8"
 
