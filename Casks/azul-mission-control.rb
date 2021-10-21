@@ -1,6 +1,6 @@
 cask "azul-mission-control" do
-  version "8.0.0.17"
-  sha256 "111cbbd9c6fe97095985edbaef0874f26e0417a3746b608310699d6e64cac211"
+  version "8.1.0.42"
+  sha256 "2ec100e47eb71e4b29a8a42d6d99521374bf00a83312cc965f037930f83cdee7"
 
   url "https://cdn.azul.com/zmc/bin/zmc#{version}-ca-macos_x64.tar.gz"
   name "Zulu Mission Control"
