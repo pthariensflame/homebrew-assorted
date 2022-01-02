@@ -9,4 +9,6 @@ cask "alire" do
   homepage "https://alire.ada.dev/"
 
   binary "bin/alr"
+
+  zap trash: ['~/.config/alire']
 end
