@@ -10,7 +10,7 @@ class IonShell < Formula
   depends_on "rust" => :build
 
   def install
-    inreplace "Makefile", "\tinstall", "\t" + Formula["coreutils"].bin/"ginstall"
+    inreplace "Makefile", "\tinstall", "\t" + (Formula["coreutils"].bin/"ginstall")
 
     ENV["RUSTUP"] = "0"
     ENV["TOOLCHAIN"] = Formula["rust"].version.to_s
