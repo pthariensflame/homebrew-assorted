@@ -1,4 +1,3 @@
-# coding: utf-8
 class Melody < Formula
   desc "Readable and maintainable language that compiles to regular expressions"
   homepage "https://github.com/yoav-lavi/melody"
