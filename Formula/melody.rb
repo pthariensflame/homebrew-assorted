@@ -2,7 +2,7 @@ class Melody < Formula
   desc "Readable and maintainable language that compiles to regular expressions"
   homepage "https://github.com/yoav-lavi/melody"
   url "https://github.com/yoav-lavi/melody/archive/refs/tags/v0.1.1.tar.gz"
-  hash "8fdde4b38952ff5b70507ffa36ae118c4efb0d4009ee959aa25c7ac7b06bcdd8"
+  sha256 "8fdde4b38952ff5b70507ffa36ae118c4efb0d4009ee959aa25c7ac7b06bcdd8"
   license "MIT"
   head "https://github.com/yoav-lavi/melody.git", branch: "main"
 
