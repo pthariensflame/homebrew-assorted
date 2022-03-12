@@ -15,12 +15,12 @@ class DexLang < Formula
               "--flag dex:optimized",
               "--constraint \"dex +optimized\" -O2 "\
               "--constraint \"llvm-hs -shared-llvm\" "\
-              "--with-gcc=#{Formula["llvm@9"].bin/"clang"}"
+              "--with-gcc=#{Formula["llvm@12"].bin/"clang"}"
     inreplace "makefile", "--local-bin-path", "--install-method copy --prefix #{prefix} --installdir"
     inreplace "src/resources/Resources.hs", "embedFile \"", "embedFile \"#{buildpath}/"
     system "cabal", "update"
     ENV["PREFIX"] = prefix
-    ENV["CXXFLAGS"] = "-std=gnu++17" # ???
+    ENV["CXXFLAGS"] = "-std=gnu++20" # ???
     system "make", "install"
     system "make", "doc"
     cp_r "doc", doc
