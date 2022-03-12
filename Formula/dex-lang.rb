@@ -7,7 +7,7 @@ class DexLang < Formula
   depends_on "cabal-install" => :build
   depends_on "ghc" => :build
   depends_on "libpng"
-  depends_on "llvm@9"
+  depends_on "llvm@12"
 
   def install
     inreplace "makefile", "\tclang++", "\t#{Formula["llvm@9"].bin/"clang++"}"
