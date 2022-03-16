@@ -1,10 +1,9 @@
 class Melody < Formula
   desc "Readable and maintainable language that compiles to regular expressions"
   homepage "https://github.com/yoav-lavi/melody"
-  url "https://github.com/yoav-lavi/melody/archive/refs/tags/melody_cli-v0.1.1.tar.gz"
-  sha256 "d36bf9d1a7b73decff74cc360a45f6193895888029096f8fd4055a499fb722a6"
+  url "https://github.com/yoav-lavi/melody/archive/refs/tags/melody_cli-v0.13.5.tar.gz"
+  sha256 "bc1e78b49a7654da6548ace3a288662325bbbf4ef160a1250cec13cc39d4e79b"
   license "MIT"
-  revision 1
   head "https://github.com/yoav-lavi/melody.git", branch: "main"
 
   depends_on "rust" => :build
