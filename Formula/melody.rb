@@ -25,6 +25,6 @@ class Melody < Formula
 
       // 🦇🦸‍♂️
     EOS
-    assert_equal "/(?:na){16}(?:\\sbatman){2}/", shell_output("#{bin/"melody"} #{testfile}").strip
+    assert_equal "(?:na){16}(?:\\sbatman){2}", shell_output("#{bin/"melody"} #{testfile}").strip
   end
 end
