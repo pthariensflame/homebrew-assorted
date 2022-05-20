@@ -10,5 +10,5 @@ cask "datastation" do
 
   depends_on arch: :x86_64
 
-  app "releases/DataStation Community Edition-darwin-x64/DataStation Community Edition.app"
+  app "releases/DataStation Desktop CE-darwin-x64/DataStation Desktop CE.app"
 end
