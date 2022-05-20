@@ -1,6 +1,6 @@
 cask "trava-openjdk-dcevm" do
-  version "11.0.11+1"
-  sha256 "efec9c39405fd09a56fc0b0f855b522ea00f35e39639307a4848a3a23f985a66"
+  version "11.0.15+1"
+  sha256 "a527432fc2eba32d0bc61c0b2653542be251329c33c86f023ebe02bf3ec72c23"
 
   url "https://github.com/TravaOpenJDK/trava-jdk-#{version.major}-dcevm/releases/download/dcevm-#{version}/Openjdk#{version.major}u-dcevm-mac-x64.tar.gz"
   name "TravaOpenJDK DCEVM"
