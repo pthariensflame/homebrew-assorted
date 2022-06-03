@@ -1,6 +1,6 @@
 cask "datastation" do
-  version "0.10.2"
-  sha256 "9107f88981c4476955507338c846b8f6a3a2435270abbb29ae269093b1e67f26"
+  version "0.11.0"
+  sha256 "5051bc80018dcbbbd1a3d76758843fee099e17146f5d6ee6e29871ef6bcd4dc6"
 
   url "https://github.com/multiprocessio/datastation/releases/download/#{version}/datastation-darwin-x64-#{version}.zip",
       verified: "github.com/multiprocessio/datastation"
