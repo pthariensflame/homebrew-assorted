@@ -1,6 +1,6 @@
 cask "alire" do
-  version "1.1.3"
-  sha256 "d39a10c729cbc0f06422d64edc37dc0f45128dba93727b10a7d4d571abac3856"
+  version "1.2.0"
+  sha256 "a705195041bc9ccad61e4f580024507de919c327407d2ccc0603fa79b8aeb246"
 
   url "https://github.com/alire-project/alire/releases/download/v#{version}/alr-#{version}-bin-x86_64-macos.zip",
       verified: "github.com/alire-project"
