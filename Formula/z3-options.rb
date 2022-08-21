@@ -1,8 +1,8 @@
 class Z3Options < Formula
   desc "High-performance theorem prover (with all binding options)"
   homepage "https://github.com/Z3Prover/z3"
-  url "https://github.com/Z3Prover/z3/archive/z3-4.8.17.tar.gz"
-  sha256 "1e57637ce8d5212fd38453df28e2730a18e0a633f723682267be87f5b858a126"
+  url "https://github.com/Z3Prover/z3/archive/z3-4.11.0.tar.gz"
+  sha256 "afa761ee2c00b66afcf7f77ccf3f9820f97142bba988040ba56ed876443b811c"
   license "MIT"
   head "https://github.com/Z3Prover/z3.git", branch: "master"
 
