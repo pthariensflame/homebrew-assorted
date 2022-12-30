@@ -16,7 +16,7 @@ cask "julia-alpha" do
   end
 
   app "Julia-#{version.major_minor}.app"
-  binary "#{appdir}/Julia-#{version.major_minor}.app/Contents/Resources/julia/bin/julia"
+  binary "#{appdir}/Julia-#{version.major_minor}.app/Contents/Resources/julia/bin/julia", target: "julia-alpha"
 
   zap trash: [
     "~/.julia",
