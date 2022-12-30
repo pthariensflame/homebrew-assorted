@@ -1,15 +1,25 @@
 cask "julia-beta" do
-  version "1.8.0-beta3"
-  sha256 "f880b5e7dec7beb971509238305d34deba577d065daa15845ee34d9c8051972f"
+  arch arm: "aarch64", intel: "x64"
 
-  url "https://julialang-s3.julialang.org/bin/mac/x64/#{version.major_minor}/julia-#{version}-mac64.dmg"
-  appcast "https://github.com/JuliaLang/julia/releases.atom"
+  version "1.9.0-beta2"
+  sha256 arm:   "3591ea180b98aae9c5f39547f83cf43c16d10bf0a608c50a92f379f01ed33a7b",
+         intel: "aa64563f02e91099824b186088fc0f9f7fe7ddbf16cf93329ff13fd686cd0868"
+
+  url "https://julialang-s3.julialang.org/bin/mac/#{arch}/#{version.major_minor}/julia-#{version}-mac#{arch.delete_prefix("x")}.dmg"
   name "Julia"
   desc "Programming language for technical computing"
   homepage "https://julialang.org/"
 
+  livecheck do
+    url "https://julialang.org/downloads/"
+    regex(/href=.*?julia[._-]v?(\d+(?:\.\d+)+-beta\d+)[._-]mac#{arch.delete_prefix("x")}\.dmg/i)
+  end
+
   app "Julia-#{version.major_minor}.app"
   binary "#{appdir}/Julia-#{version.major_minor}.app/Contents/Resources/julia/bin/julia", target: "julia-beta"
 
-  zap trash: "~/.julia"
+  zap trash: [
+    "~/.julia",
+    "~/Library/Preferences/julia.plist",
+  ]
 end
