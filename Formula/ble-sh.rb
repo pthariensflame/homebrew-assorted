@@ -1,10 +1,13 @@
 class BleSh < Formula
   desc "Bash Line Editor: syntax highlighting, auto suggestions, vim modes, etc."
   homepage "https://github.com/akinomyoga/ble.sh"
-  url "https://github.com/akinomyoga/ble.sh.git", tag: "v0.4.0-devel2"
-  version "0.4.0-devel2"
-  sha256 "c5d2f2644f1bf9d9a92238b57b325ff950f0ed82fe2c21e019a51f50924c42bb"
-  head "https://github.com/akinomyoga/ble.sh.git"
+  url "https://github.com/akinomyoga/ble.sh.git",
+      tag:      "v0.4.0-devel3",
+      revision: "1a5c451c8baa71439a6be4ea0f92750de35a7620"
+  version "0.4.0-devel3"
+  license "BSD3"
+  head "https://github.com/akinomyoga/ble.sh.git",
+       branch: "master"
 
   depends_on "gawk" => :build
   depends_on "make" => :build
