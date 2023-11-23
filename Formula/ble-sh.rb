@@ -5,7 +5,7 @@ class BleSh < Formula
       tag:      "v0.4.0-devel3",
       revision: "1a5c451c8baa71439a6be4ea0f92750de35a7620"
   version "0.4.0-devel3"
-  license "BSD3"
+  license "BSD-3-Clause"
   head "https://github.com/akinomyoga/ble.sh.git",
        branch: "master"
 
