@@ -1,9 +1,9 @@
 cask "julia-rc" do
   arch arm: "aarch64", intel: "x64"
 
-  version "1.10.0-rc2"
-  sha256 arm:   "25340f8907e9b698804ded1041ed9b2ebea20cc22073fb78a024a2af80f9972d",
-         intel: "0b2f54326b93129377f3ec827d2a1a662c2bf2256f5edf3bd5829be5afb9082c"
+  version "1.10.0-rc3"
+  sha256 arm:   "43508d0bb9443dfaff3cf379f80f9c1943ff3c768a3f3a08eb76e064f1995cee",
+         intel: "63b4d0825408789cf0aa15dd66487b46002f5726f22597d3fce3e89aaad2b7b7"
 
   url "https://julialang-s3.julialang.org/bin/mac/#{arch}/#{version.major_minor}/julia-#{version}-mac#{arch.delete_prefix("x")}.dmg"
   name "Julia"
