@@ -1,7 +1,7 @@
 class Llvmenv < Formula
   desc "Manages multiple LLVM/Clang builds"
   homepage "https://github.com/llvmenv/llvmenv"
-  url "https://github.com/llvmenv/llvmenv/archive/v0.3.2.tar.gz"
+  url "https://github.com/llvmenv/llvmenv/archive/refs/tags/v0.3.2.tar.gz"
   sha256 "b0fc96e1c07113f691d618021b4ec1aba7ebafa4f8c9221e45e8ae1dc7688c79"
   head "https://github.com/llvmenv/llvmenv.git"
 

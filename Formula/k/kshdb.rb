@@ -1,7 +1,7 @@
 class Kshdb < Formula
   desc "Korn shell debugger"
   homepage "https://kshdb.readthedocs.io/en/latest/"
-  url "https://github.com/rocky/kshdb/archive/1.1.0.tar.gz"
+  url "https://github.com/rocky/kshdb/archive/refs/tags/1.1.0.tar.gz"
   sha256 "bfc4026e80c9f55719af6d5d51349be422292da828a8190ef86260ca8ac390c3"
   license "GPL-2.0-only"
 
