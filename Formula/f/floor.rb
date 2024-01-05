@@ -5,8 +5,8 @@ class Floor < Formula
   head "https://github.com/a2flo/floor.git", branch: "master"
 
   depends_on "llvm" => [:build, :test]
-  depends_on "sdl2"
   depends_on "openal-soft"
+  depends_on "sdl2"
 
   def install
     ENV["CC"] = Formula["llvm"].bin/"clang"
@@ -16,7 +16,7 @@ class Floor < Formula
     ENV["LDFLAGS"] = "-L#{Formula["sdl2"].lib} -lsdl2"
     files = Dir["*"]
     mkdir "floor_tmp"
-    for file in files do
+    files.each do |file|
       mv file, "floor_tmp/"
     end
     mv "floor_tmp", "floor"
