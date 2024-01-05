@@ -4,6 +4,10 @@ class VulkanscPcutil < Formula
   license "Apache-2.0"
   head "https://github.com/KhronosGroup/VulkanSC-pcutil.git", branch: "main"
 
+  livecheck do
+    skip "HEAD-only"
+  end
+
   def install
     system "make", "all"
     bin.install ["ptest", "pcinfo"]
