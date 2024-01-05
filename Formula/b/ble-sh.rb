@@ -1,3 +1,6 @@
+# typed: true
+# frozen_string_literal: true
+
 class BleSh < Formula
   desc "Bash Line Editor: syntax highlighting, auto suggestions, vim modes, etc."
   homepage "https://github.com/akinomyoga/ble.sh"
