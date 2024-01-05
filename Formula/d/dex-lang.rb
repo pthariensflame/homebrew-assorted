@@ -7,7 +7,7 @@ class DexLang < Formula
   depends_on "cabal-install" => :build
   depends_on "ghc" => :build
   depends_on "libpng"
-  depends_on "llvm@12"
+  depends_on "llvm"
 
   def install
     system "cabal", "update"
@@ -18,6 +18,6 @@ class DexLang < Formula
   end
 
   test do
-    # system "make", "test"
+    system bin/"dex", "help"
   end
 end
