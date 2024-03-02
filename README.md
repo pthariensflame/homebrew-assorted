@@ -12,17 +12,7 @@ brew install pthariensflame/assorted/<casks>
 ```
 
 Or `brew tap pthariensflame/assorted` and then `brew install
-<formula>` or `brew cask install <cask>`.
-
-Or install via URL (which will not receive updates):
-
-``` brew install
-https://raw.githubusercontent.com/pthariensflame/homebrew-assorted/master/Formula/<formula>.rb
-```
-
-``` brew cask install
-https://raw.githubusercontent.com/pthariensflame/homebrew-assorted/master/Casks/<cask>.rb
-```
+<formula>` or `brew install <cask>`.
 
 ## Documentation
 `brew help`, `man brew` or check [Homebrew's
