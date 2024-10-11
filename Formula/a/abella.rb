@@ -2,8 +2,8 @@ class Abella < Formula
   desc "Interactive theorem prover based on lambda-tree syntax"
   homepage "https://abella-prover.org/"
   url "https://github.com/abella-prover/abella.git",
-      tag:      "v2.0.8",
-      revision: "ddfb615d501ad660510a4fe512b344f46cda6317"
+      tag:      "v2.0.8.3",
+      revision: "e59565233045865942882271a34236c257edc8e1"
   head "https://github.com/abella-prover/abella.git",
        branch: "master"
 
