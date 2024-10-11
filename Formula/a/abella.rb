@@ -12,14 +12,14 @@ class Abella < Formula
   depends_on "ocaml" => :build
 
   resource "cmdliner" do
-    url "https://erratique.ch/software/cmdliner/releases/cmdliner-1.2.0.tbz"
-    sha256 "afed10589028394fd6f64e97b1c617e2be70de6d35ee47e04235da31a9dd0078"
+    url "https://erratique.ch/software/cmdliner/releases/cmdliner-1.3.0.tbz"
+    sha256 "8e8180f573b440f6a7a8c208dab2cae4a82384fec732d22784d1bb6e64168cbb"
   end
 
   resource "yojson" do
     url "https://github.com/ocaml-community/yojson.git",
-        tag:      "2.1.1",
-        revision: "57bc8ca0eaf5bdb423fcdece49ea0d1c2866f90c"
+        tag:      "2.2.2",
+        revision: "3f82b79d1865eec82c6f498ee1835a90c74c31b4"
   end
 
   resource "cppo" do
