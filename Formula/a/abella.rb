@@ -22,10 +22,10 @@ class Abella < Formula
     sha256 "8e8180f573b440f6a7a8c208dab2cae4a82384fec732d22784d1bb6e64168cbb"
   end
 
-  resource "cppo" do
-    url "https://github.com/ocaml-community/cppo.git",
-        tag:      "v1.6.9",
-        revision: "31c1365214d2381b12127c657156778e921357f8"
+  resource "re" do
+    url "https://github.com/ocaml/ocaml-re.git",
+        tag:      "1.13.2",
+        revision: "f596237c675e1e3b17a1ffea72febc6e27630f29"
   end
 
   resource "seq" do
@@ -43,8 +43,8 @@ class Abella < Formula
   def install
     resource("base64").stage "base64"
     resource("cmdliner").stage "cmdliner"
-    resource("cppo").stage "cppo"
     resource("seq").stage "seq"
+    resource("re").stage "re"
     resource("yojson").stage "yojson"
 
     system "make", "all-release"
