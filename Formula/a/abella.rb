@@ -11,15 +11,15 @@ class Abella < Formula
   depends_on "menhir" => :build
   depends_on "ocaml" => :build
 
+  resource "base64" do
+    url "https://github.com/mirage/ocaml-base64.git",
+        tag:      "v3.5.1",
+        revision: "084346f14ed1e6706d733402dd6ff65b0dc4f718"
+  end
+
   resource "cmdliner" do
     url "https://erratique.ch/software/cmdliner/releases/cmdliner-1.3.0.tbz"
     sha256 "8e8180f573b440f6a7a8c208dab2cae4a82384fec732d22784d1bb6e64168cbb"
-  end
-
-  resource "yojson" do
-    url "https://github.com/ocaml-community/yojson.git",
-        tag:      "2.2.2",
-        revision: "3f82b79d1865eec82c6f498ee1835a90c74c31b4"
   end
 
   resource "cppo" do
@@ -34,11 +34,18 @@ class Abella < Formula
         revision: "f715de692d602df65ae452a5a745c32d25adebdc"
   end
 
+  resource "yojson" do
+    url "https://github.com/ocaml-community/yojson.git",
+        tag:      "2.2.2",
+        revision: "3f82b79d1865eec82c6f498ee1835a90c74c31b4"
+  end
+
   def install
+    resource("base64").stage "base64"
     resource("cmdliner").stage "cmdliner"
-    resource("yojson").stage "yojson"
     resource("cppo").stage "cppo"
     resource("seq").stage "seq"
+    resource("yojson").stage "yojson"
 
     system "make", "all-release"
 
