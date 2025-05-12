@@ -1,8 +1,8 @@
 class Hayabusa < Formula
   desc "Fast Rust fetch program"
   homepage "https://github.com/Notarin/hayabusa"
-  url "https://github.com/Notarin/hayabusa/archive/refs/tags/v0.3.1.tar.gz"
-  sha256 "bb584c07b9dd899b92a14b4100062af09255f3146bb3fdf38339c99f9527621c"
+  url "https://github.com/Notarin/hayabusa/archive/refs/tags/v0.3.6.tar.gz"
+  sha256 "b7a432c12e087e955aefeac88007e2392a11b126d5b36a4d4888bc3d94338e42"
   license "CC-BY-NC-ND-4.0"
   head "https://github.com/Notarin/hayabusa.git", branch: "main"
 
