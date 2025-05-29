@@ -2,9 +2,9 @@ cask "azul-mission-control" do
   arch arm:   "aarch64",
        intel: "x64"
 
-  version "8.3.1.81"
-  sha256 arm:   "3102b409be796554c6c507c83758a97e5d9124e5de8a1933dc2619060d1de9c1",
-         intel: "6d4e8532adc5d9af311e4d623c39d13b5d547dc4f7e7156fd27c206acc194707"
+  version "9.1.0.25"
+  sha256 arm:   "e9f4b39a52931bf0d5367fbbee6af96b098437b5287020d2c09915414bd5bd14",
+         intel: "7188d2560be861783b305f5459e0faddec41399e3c5dd3748290834defad2741"
 
   url "https://cdn.azul.com/zmc/bin/zmc#{version}-ca-macos_#{arch}.tar.gz"
   name "Azul Mission Control"
