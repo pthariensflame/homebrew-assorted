@@ -14,6 +14,6 @@ class Olden < Formula
   end
 
   test do
-    assert_predicate bin/"olden", :exist?
+    assert_path_exists bin/"olden"
   end
 end

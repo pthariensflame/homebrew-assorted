@@ -14,6 +14,6 @@ class Utfcheck < Formula
   end
 
   test do
-    assert_predicate bin/"utfcheck", :exist?
+    assert_path_exists bin/"utfcheck"
   end
 end

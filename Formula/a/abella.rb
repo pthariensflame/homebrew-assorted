@@ -65,7 +65,7 @@ class Abella < Formula
     end
     system bin/"abella", testpath/"subst.thm",
            "-o", testpath/"subst.out"
-    assert_predicate testpath/"subst.thc", :exist?
-    assert_predicate testpath/"subst.out", :exist?
+    assert_path_exists testpath/"subst.thc"
+    assert_path_exists testpath/"subst.out"
   end
 end

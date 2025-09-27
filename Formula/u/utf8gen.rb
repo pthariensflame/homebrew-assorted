@@ -14,6 +14,6 @@ class Utf8gen < Formula
   end
 
   test do
-    assert_predicate bin/"utf8gen", :exist?
+    assert_path_exists bin/"utf8gen"
   end
 end

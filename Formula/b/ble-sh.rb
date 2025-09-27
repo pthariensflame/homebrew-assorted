@@ -34,6 +34,6 @@ class BleSh < Formula
   test do
     # This software is impossible to test in an automated fashion;
     # the best we can do is test that it did in fact create the top-level script.
-    assert_predicate libexec/"ble/ble.sh", :exist?
+    assert_path_exists libexec/"ble/ble.sh"
   end
 end

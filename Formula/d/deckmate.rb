@@ -15,6 +15,6 @@ class Deckmate < Formula
   end
 
   test do
-    assert_predicate bin/"deckmate", :exist?
+    assert_path_exists bin/"deckmate"
   end
 end
