@@ -3,7 +3,7 @@ class Hayabusa < Formula
   homepage "https://github.com/Notarin/hayabusa"
   url "https://github.com/Notarin/hayabusa/archive/refs/tags/v0.3.9.tar.gz"
   sha256 "56d237a157c75bae7af4920035213a3a47c69f7c5433a4016e73f90bdf00d96c"
-  license "CC-BY-NC-ND-4.0"
+  license "AGPL-3.0-or-later"
   head "https://github.com/Notarin/hayabusa.git", branch: "main"
 
   depends_on "rust" => :build
