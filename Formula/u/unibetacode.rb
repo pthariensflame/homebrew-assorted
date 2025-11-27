@@ -1,8 +1,8 @@
 class Unibetacode < Formula
   desc "Beta Code to/from UTF-8 Unicode conversion package"
   homepage "https://unifoundry.com/unibetacode/index.html"
-  url "https://unifoundry.com/pub/unibetacode/unibetacode-2.0.1/unibetacode-2.0.1.tar.gz"
-  sha256 "0fb3226de2f39616267c5daad8b0357b279074e109a2d968560f9f427f69d30f"
+  url "https://unifoundry.com/pub/unibetacode/unibetacode-2.3/unibetacode-2.3.tar.gz"
+  sha256 "d699d8c49c632b1bc7136352af7fec82edf1a19d464cc03936541ecf26490146"
   license "GPL-2.0-or-later"
 
   def install
