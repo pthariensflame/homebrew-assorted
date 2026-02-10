@@ -6,7 +6,8 @@ cask "stoat" do
   sha256 arm:   "54c5d3fef7ce8f772bfe42b89418a0defa7bdd226f91c3c3389e0fdda2dc671c",
          intel: "1b3482fdf642ff01a614841cdb0d678ecd1b7f08377eaa347f2cfe3a6eb153ef"
 
-  url "https://github.com/stoatchat/for-desktop/releases/download/v#{version}/Stoat-darwin-#{arch}-#{version}.zip"
+  url "https://github.com/stoatchat/for-desktop/releases/download/v#{version}/Stoat-darwin-#{arch}-#{version}.zip",
+      verified: "github.com/stoatchat/for-desktop/"
   name "Stoat"
   desc "Open-source community-oriented chat app client"
   homepage "https://stoat.chat/"
