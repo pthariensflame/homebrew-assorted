@@ -11,5 +11,7 @@ cask "azul-mission-control" do
   desc "Azul version of JDK Mission Control; monitor running JVMs"
   homepage "https://www.azul.com/products/components/azul-mission-control/"
 
+  depends_on macos: ">= :monterey"
+
   app "zmc#{version}-ca-macos_#{arch}/Azul Mission Control.app"
 end
