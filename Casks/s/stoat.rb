@@ -2,9 +2,9 @@ cask "stoat" do
   arch arm:   "arm64",
        intel: "x64"
 
-  version "1.1.12"
-  sha256 arm:   "54c5d3fef7ce8f772bfe42b89418a0defa7bdd226f91c3c3389e0fdda2dc671c",
-         intel: "1b3482fdf642ff01a614841cdb0d678ecd1b7f08377eaa347f2cfe3a6eb153ef"
+  version "1.3.0"
+  sha256 arm:   "e81288d6209eec8a8c431cea5466009fc77275a78cf8bee02282a7f1b355f303",
+         intel: "9af19d26e6817ca36d5f7688409cdfe09f5da0b2ef408f0dfc43cf2dde23d0a0"
 
   url "https://github.com/stoatchat/for-desktop/releases/download/v#{version}/Stoat-darwin-#{arch}-#{version}.zip",
       verified: "github.com/stoatchat/for-desktop/"
