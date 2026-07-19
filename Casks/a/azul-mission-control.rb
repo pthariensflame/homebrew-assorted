@@ -2,16 +2,16 @@ cask "azul-mission-control" do
   arch arm:   "aarch64",
        intel: "x64"
 
-  version "9.1.1.1.41"
-  sha256 arm:   "3dc721d06b347f77df38368d2d1e22bdf32395cfbf47fd94226ade2802031bc5",
-         intel: "255162176eaf785bb4d922da967a528b6557392f9ca8dd5d7ebb56c5b615d7ed"
+  version "9.1.2.47"
+  sha256 arm:   "e98d619ecdbbafeabcb3dc895cd9aac6522888569957ef09f96ef34d956fa0cf",
+         intel: "d195f58a90df8ebbc4a6c90c30986226392b76d65dc8cd7404bd2eb60bfddb47"
 
   url "https://cdn.azul.com/zmc/bin/zmc#{version}-ca-macos_#{arch}.tar.gz"
   name "Azul Mission Control"
   desc "Azul version of JDK Mission Control; monitor running JVMs"
   homepage "https://www.azul.com/products/components/azul-mission-control/"
 
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
 
   app "zmc#{version}-ca-macos_#{arch}/Azul Mission Control.app"
 end
