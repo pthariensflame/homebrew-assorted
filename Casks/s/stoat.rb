@@ -2,9 +2,9 @@ cask "stoat" do
   arch arm:   "arm64",
        intel: "x64"
 
-  version "1.3.0"
-  sha256 arm:   "e81288d6209eec8a8c431cea5466009fc77275a78cf8bee02282a7f1b355f303",
-         intel: "9af19d26e6817ca36d5f7688409cdfe09f5da0b2ef408f0dfc43cf2dde23d0a0"
+  version "1.4.2"
+  sha256 arm:   "5d84f90a970a0e5304f6c0a0f06a892590d8f2d35c8e57eca97e342ebc11b1f7",
+         intel: "62cbe307229b7c20c8d2b5534ed2972bc788ef44a70855a4311c31075841e375"
 
   url "https://github.com/stoatchat/for-desktop/releases/download/v#{version}/Stoat-darwin-#{arch}-#{version}.zip",
       verified: "github.com/stoatchat/for-desktop/"
@@ -18,7 +18,7 @@ cask "stoat" do
     strategy :git
   end
 
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   app "Stoat.app"
 
