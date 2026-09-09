@@ -1,9 +1,9 @@
 cask "alire" do
   arch arm: "aarch64", intel: "x86_64"
 
-  version "2.1.0"
-  sha256 arm:   "98dc104602de091a7bf823692f95c380a988ee7db929c0e00e5afa36ef2dfc0c",
-         intel: "67d3389833b936a56534b7ad2ea91164b18db40318571e904fc8ab41aca7acc8"
+  version "2.1.1"
+  sha256 arm:   "2c4867bfff3b95ecd9d846df460a52983d2b0072808b341f8fa5d82494fb309e",
+         intel: "d3e16cdfaf0cfb2da62853b79b62910189fdca9d5fddc5c3ac5974ffc7d9544b"
 
   url "https://github.com/alire-project/alire/releases/download/v#{version}/alr-#{version}-bin-#{arch}-macos.zip"
   name "Alire"
