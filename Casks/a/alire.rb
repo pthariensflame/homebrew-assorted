@@ -10,6 +10,8 @@ cask "alire" do
   desc "Obtain, build, and incorporate Ada/SPARK libraries into your own projects"
   homepage "https://alire.ada.dev/"
 
+  depends_on :macos
+
   binary "bin/alr"
 
   zap trash: "~/.config/alire"
