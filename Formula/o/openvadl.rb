@@ -6,7 +6,7 @@ class Openvadl < Formula
   license all_of: ["GPL-3.0-or-later", "Apache-2.0", "CC-BY-4.0"]
   head "https://github.com/OpenVADL/openvadl.git", branch: "master"
 
-  depends_on "openjdk@21"
+  depends_on "openjdk@25"
 
   def install
     system "./gradlew", "--no-daemon", "installDist"
