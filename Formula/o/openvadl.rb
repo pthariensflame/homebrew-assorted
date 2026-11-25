@@ -1,8 +1,8 @@
 class Openvadl < Formula
   desc "Open-source implementation of the VADL processor description language"
   homepage "https://openvadl.org"
-  url "https://github.com/OpenVADL/openvadl/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "75279ec3d89472796200bff8eb108649afe98d7cf7a88d39cb24bf5961a88499"
+  url "https://github.com/OpenVADL/openvadl/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "b3c92a4c5ebce9c44dcb7f78c9aca6b126df535915d393e3c5e13bd74d0522ed"
   license all_of: ["GPL-3.0-or-later", "Apache-2.0", "CC-BY-4.0"]
   head "https://github.com/OpenVADL/openvadl.git", branch: "master"
 
