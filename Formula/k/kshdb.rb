@@ -15,7 +15,7 @@ class Kshdb < Formula
     system "./configure",
            "--disable-silent-rules",
            "--prefix=#{prefix}",
-           "--with-ksh=#{Formula["ksh"].bin/"ksh"}"
+           "--with-ksh=#{Formula["ksh"].bin}/ksh"
     system "make", "install"
   end
 

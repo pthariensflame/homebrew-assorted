@@ -17,7 +17,7 @@ class Unibetacode < Formula
     uni = "Ὁ βίος βραχύς ἡ δὲ τέχνη μακρή\n"
     (testpath/"test.beta").write beta
     (testpath/"test.txt").write uni
-    assert_equal beta, shell_output("#{bin/"uni2beta"} -i #{testpath/"test.txt"}")
-    assert_equal uni, shell_output("#{bin/"beta2uni"} -i #{testpath/"test.beta"}")
+    assert_equal beta, shell_output("#{bin}/uni2beta -i #{testpath}/test.txt")
+    assert_equal uni, shell_output("#{bin}/beta2uni -i #{testpath}/test.beta")
   end
 end

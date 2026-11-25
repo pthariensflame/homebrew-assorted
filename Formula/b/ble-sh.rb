@@ -16,13 +16,13 @@ class BleSh < Formula
 
   def install
     system Formula["make"].bin/"gmake"
-    system Formula["make"].bin/"gmake", "INSDIR=#{libexec/"ble"}", "install"
+    system Formula["make"].bin/"gmake", "INSDIR=#{libexec}/ble", "install"
   end
 
   def caveats
     <<~EOS
       To enable ble.sh by default, add the following to the beginning of your ~/.bash_profile:
-        [[ $- == *i* ]] && source #{opt_libexec/"ble/ble.sh"} --noattach
+        [[ $- == *i* ]] && source #{opt_libexec}/ble/ble.sh --noattach
       and also add the following to the end of your ~/.bash_profile:
         ((_ble_bash)) && ble-attach
 
